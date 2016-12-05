@@ -1,0 +1,3 @@
+[submodule "hszMain/libs/libA"]
+	path = hszMain/libs/libA
+	url = https://github.com/keassze/hszLibA.git
