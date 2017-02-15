@@ -15,6 +15,7 @@
 		72689DAE1DF5076900AF5515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72689DAC1DF5076900AF5515 /* LaunchScreen.storyboard */; };
 		72689DB91DF5076900AF5515 /* hszMainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72689DB81DF5076900AF5515 /* hszMainTests.m */; };
 		72689DC41DF5076900AF5515 /* hszMainUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72689DC31DF5076900AF5515 /* hszMainUITests.m */; };
+		72689E131DF51A5800AF5515 /* SWKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72689E121DF51A5800AF5515 /* SWKBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		72689DBF1DF5076900AF5515 /* hszMainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hszMainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72689DC31DF5076900AF5515 /* hszMainUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hszMainUITests.m; sourceTree = "<group>"; };
 		72689DC51DF5076900AF5515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72689E111DF51A5800AF5515 /* SWKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWKBaseViewController.h; path = libs/libA/Base/SWKBaseViewController.h; sourceTree = "<group>"; };
+		72689E121DF51A5800AF5515 /* SWKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWKBaseViewController.m; path = libs/libA/Base/SWKBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		72689D9D1DF5076900AF5515 /* hszMain */ = {
 			isa = PBXGroup;
 			children = (
+				72689E101DF51A4300AF5515 /* Lib */,
 				72689DA11DF5076900AF5515 /* AppDelegate.h */,
 				72689DA21DF5076900AF5515 /* AppDelegate.m */,
 				72689DA41DF5076900AF5515 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				72689DC51DF5076900AF5515 /* Info.plist */,
 			);
 			path = hszMainUITests;
+			sourceTree = "<group>";
+		};
+		72689E101DF51A4300AF5515 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				72689E111DF51A5800AF5515 /* SWKBaseViewController.h */,
+				72689E121DF51A5800AF5515 /* SWKBaseViewController.m */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72689DA61DF5076900AF5515 /* ViewController.m in Sources */,
+				72689E131DF51A5800AF5515 /* SWKBaseViewController.m in Sources */,
 				72689DA31DF5076900AF5515 /* AppDelegate.m in Sources */,
 				72689DA01DF5076900AF5515 /* main.m in Sources */,
 			);
@@ -507,6 +521,7 @@
 				72689DCA1DF5076900AF5515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72689DCB1DF5076900AF5515 /* Build configuration list for PBXNativeTarget "hszMainTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +530,7 @@
 				72689DCD1DF5076900AF5515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72689DCE1DF5076900AF5515 /* Build configuration list for PBXNativeTarget "hszMainUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +539,7 @@
 				72689DD01DF5076900AF5515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

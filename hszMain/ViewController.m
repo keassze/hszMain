@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SWKBaseViewController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"I'm MAIN");
+    
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [btn setBackgroundColor:[UIColor blueColor]];
+    [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+-(void)click
+{
+    NSLog(@"dsadad");
+//    SWKBaseViewController *vc = [[SWKBaseViewController alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
